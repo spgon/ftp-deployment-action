@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --no-cache lftp openssh
+RUN apk add --no-cache  openssh lftp
 
 WORKDIR /app
 
