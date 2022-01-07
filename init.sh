@@ -33,7 +33,7 @@ FTP_SETTINGS="${FTP_SETTINGS} set net:persist-retries ${INPUT_NET_PERSIST_RETRIE
 FTP_SETTINGS="${FTP_SETTINGS} set net:timeout ${INPUT_NET_TIMEOUT};"
 FTP_SETTINGS="${FTP_SETTINGS} set dns:max-retries ${INPUT_DNS_MAX_RETRIES};"
 FTP_SETTINGS="${FTP_SETTINGS} set dns:fatal-timeout ${INPUT_DNS_FATAL_TIMEOUT};"
-FTP_SETTINGS="${FTP_SETTINGS} sftp:auto-confirm yes;"
+FTP_SETTINGS="${FTP_SETTINGS} set sftp:auto-confirm true;"
 MIRROR_COMMAND="mirror --continue --reverse"
 
 if [ -z "${INPUT_MAX_RETRIES}" ]; then
