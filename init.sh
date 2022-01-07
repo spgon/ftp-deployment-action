@@ -92,7 +92,7 @@ until [ ${COUNTER} -gt ${INPUT_MAX_RETRIES} ]; do
   echo "# ---------------------------------------------"
   lftp \
     --debug \
-    -u '${INPUT_USER}','${INPUT_PASSWORD}' \
+    -u "${INPUT_USER}","${INPUT_PASSWORD}" \
     "${INPUT_SERVER}" \
     -e "${FTP_SETTINGS} ${MIRROR_COMMAND} ${INPUT_LOCAL_DIR} ${INPUT_REMOTE_DIR}; quit;" &&
     SUCCESS="true"
