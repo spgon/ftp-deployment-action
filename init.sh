@@ -90,7 +90,7 @@ until [ ${COUNTER} -gt ${INPUT_MAX_RETRIES} ]; do
   echo ""
   echo "Try #: ${COUNTER}"
   echo "# ---------------------------------------------"
-  lftp \
+  sftp \
     --debug \
     -u "${INPUT_USER}","${INPUT_PASSWORD}" \
     "${INPUT_SERVER}" \
